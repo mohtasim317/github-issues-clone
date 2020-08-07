@@ -3,11 +3,5 @@
 }
 
 .app {
-  width: 300px;
   background-color: blue;
-}
-
-.title {
-  color: purple;
-  background-color: red;
 }

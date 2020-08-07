@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FC } from "react";
 import "../index.css";
 
-const Header = () => {
+//change "any" on line 5
+const Header: FC<any> = (props) => {
   return (
     <div>
       <h1>Header</h1>
