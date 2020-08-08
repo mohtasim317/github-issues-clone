@@ -6,7 +6,7 @@ interface Props {
   number: number;
   id: number;
 }
-const Issues: React.FC<Props> = (props) => {
+const IssuesList: React.FC<Props> = (props) => {
   return (
     <div>
       <h1>{props.url}</h1>
@@ -17,4 +17,4 @@ const Issues: React.FC<Props> = (props) => {
   );
 };
 
-export default Issues;
+export default IssuesList;

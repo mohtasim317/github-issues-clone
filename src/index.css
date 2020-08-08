@@ -2,6 +2,29 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0px;
+}
+
 .app {
   background-color: blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-header {
+  background-color: rgb(250, 251, 252);
+  width: 100%;
+  height: 112px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-and-buttons {
+  display: flex;
+  flex-direction: row;
 }

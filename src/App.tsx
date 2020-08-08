@@ -1,7 +1,7 @@
-import React, { useState, useEffect, FC } from "react";
-import Header from "./components/Header";
+import React, { useState, useEffect, FC, Fragment } from "react";
+import RepoHeader from "./components/RepoHeader";
 import SearchBar from "./components/SearchBar";
-import Issues from "./components/Issues";
+import IssuesList from "./components/IssuesList";
 import "./index.css";
 
 export interface GithubData {
@@ -22,6 +22,7 @@ const App: FC = () => {
       const vals = await info.json();
       updateData(vals);
       updateStatus(true);
+      console.log(vals);
     } catch (err) {
       return err;
     }
@@ -34,11 +35,15 @@ const App: FC = () => {
   return (
     <div className="app">
       {fetchStatus ? (
-        <div>
-          <h1> We got the data {data[0].id}</h1>
-          <Header />
+        <div className="rendered-app">
+          <RepoHeader />
           <SearchBar />
-          <Issues key="1" id={data[0].id} url={data[0].url} number={data[0].number} />
+          <IssuesList
+            key="1"
+            id={data[0].id}
+            url={data[0].url}
+            number={data[0].number}
+          />
         </div>
       ) : (
         <h1> Fetching data</h1>

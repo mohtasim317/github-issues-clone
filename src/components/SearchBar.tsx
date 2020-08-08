@@ -3,9 +3,14 @@ import "../index.css";
 
 const SearchBar = () => {
   return (
-    <div>
-      <h1>Search</h1>
-      <h2>Bar</h2>
+    <div className="search-bar">
+      <input
+        placeholder="search"
+        style={{ fontSize: "12px" }}
+        // onChange={props.onChange}
+        // value={props.value}
+        // type={props.type}
+      ></input>
     </div>
   );
 };
