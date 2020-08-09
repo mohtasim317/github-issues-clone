@@ -3,12 +3,15 @@ import RepoHeader from "./components/RepoHeader";
 import SearchBar from "./components/SearchBar";
 import Issues from "./components/Issues";
 import IssueHeader from "./components/IssueHeader";
+import ContributeMessage from "./components/ContributeMessage"
 import "./index.css";
 
 export interface GithubData {
   title: string;
   number: number;
-  // id: number;
+  user: {
+    login: string;
+  };
 }
 
 const App: FC = () => {
@@ -43,18 +46,7 @@ const App: FC = () => {
         <div className="rendered-app">
           <RepoHeader />
           <div className="search-and-list-container">
-            <div className="contribute-message">
-              <p>
-                <span role="img" aria-label="hand waving emoji">
-                  👋
-                </span>
-                Want to contribute to facebook/react?
-              </p>
-              <p>
-                If you have a bug or an idea, read the contributing guidelines
-                before opening an issue.
-              </p>
-            </div>
+            <ContributeMessage />
             <SearchBar searchingFunction={handleChange} />
             <div className="list-of-issues">
               <IssueHeader />
@@ -70,7 +62,7 @@ const App: FC = () => {
                     <div className="issue-row">
                       <Issues
                         key={index}
-                        // id={data[0].id}
+                        login={issue.user.login}
                         title={issue.title}
                         number={issue.number}
                       />

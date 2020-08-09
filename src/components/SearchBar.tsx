@@ -9,6 +9,7 @@ interface Props {
 const SearchBar: FC<Props> = (props) => {
   return (
     <div className="search-bar-row">
+      <div className="button"></div>
       <input
         className="search-bar"
         placeholder="is:issue is:open "
