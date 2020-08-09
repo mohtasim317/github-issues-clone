@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { FC } from "react";
 import "../index.css";
 
 interface Props {
-  url: string;
-  number: number;
-  id: number;
+  key: number;
+  title: string;
+  // number: number;
+  // id: number;
 }
-const IssuesList: React.FC<Props> = (props) => {
+
+const IssuesList: FC<Props> = (props) => {
   return (
-    <div>
-      <h1>{props.url}</h1>
-      <h1>{props.number}</h1>
-      <h1>{props.id}</h1>
-      <h2>ues</h2>
+    <div className="issue">
+      <p>{props.title}</p>
+      {/* <h1>{props.id}</h1> */}
     </div>
   );
 };
