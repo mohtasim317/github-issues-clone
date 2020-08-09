@@ -1,7 +1,7 @@
 import React, { useState, useEffect, FC } from "react";
 import RepoHeader from "./components/RepoHeader";
 import SearchBar from "./components/SearchBar";
-import IssuesList from "./components/IssuesList";
+import Issues from "./components/Issues";
 import "./index.css";
 
 export interface GithubData {
@@ -45,25 +45,30 @@ const App: FC = () => {
       {fetchStatus ? (
         <div className="rendered-app">
           <RepoHeader />
-          <SearchBar searchingFunction={handleChange} />
-          {data
-            .filter((issue) => {
-              if (issue.title.toLowerCase().includes(searchValue)) {
-                return issue;
-              }
-            })
-            .map((issue, index) => {
-              return (
-                <div className="issues-row">
-                  <IssuesList
-                    key={index}
-                    // id={data[0].id}
-                    title={issue.title}
-                    // number={data[0].number}
-                  />
-                </div>
-              );
-            })}
+          <div className="search-and-list-container">
+            <SearchBar searchingFunction={handleChange} />
+            <div className="list-of-issues">
+              {data
+                // eslint-disable-next-line array-callback-return
+                .filter((issue) => {
+                  if (issue.title.toLowerCase().includes(searchValue)) {
+                    return issue;
+                  }
+                })
+                .map((issue, index) => {
+                  return (
+                    <div className="issue-row">
+                      <Issues
+                        key={index}
+                        // id={data[0].id}
+                        title={issue.title}
+                        // number={data[0].number}
+                      />
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
         </div>
       ) : (
         <h1> Fetching data</h1>

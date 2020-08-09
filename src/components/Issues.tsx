@@ -8,7 +8,7 @@ interface Props {
   // id: number;
 }
 
-const IssuesList: FC<Props> = (props) => {
+const Issues: FC<Props> = (props) => {
   return (
     <div className="issue">
       <p>{props.title}</p>
@@ -17,4 +17,4 @@ const IssuesList: FC<Props> = (props) => {
   );
 };
 
-export default IssuesList;
+export default Issues;
