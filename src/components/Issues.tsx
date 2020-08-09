@@ -4,7 +4,7 @@ import "../index.css";
 interface Props {
   key: number;
   title: string;
-  // number: number;
+  number: number;
   // id: number;
 }
 
@@ -12,9 +12,9 @@ const Issues: FC<Props> = (props) => {
   return (
     <div className="issue">
       <p>{props.title}</p>
-      {/* <h1>{props.id}</h1> */}
+      <p>#{props.number} opened yesterday by </p>
     </div>
   );
 };
 
-export default Issues ;
+export default Issues;

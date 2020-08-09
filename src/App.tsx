@@ -2,11 +2,12 @@ import React, { useState, useEffect, FC } from "react";
 import RepoHeader from "./components/RepoHeader";
 import SearchBar from "./components/SearchBar";
 import Issues from "./components/Issues";
+import IssueHeader from "./components/IssueHeader";
 import "./index.css";
 
 export interface GithubData {
   title: string;
-  // number: number;
+  number: number;
   // id: number;
 }
 
@@ -42,8 +43,21 @@ const App: FC = () => {
         <div className="rendered-app">
           <RepoHeader />
           <div className="search-and-list-container">
+            <div className="contribute-message">
+              <p>
+                <span role="img" aria-label="hand waving emoji">
+                  👋
+                </span>
+                Want to contribute to facebook/react?
+              </p>
+              <p>
+                If you have a bug or an idea, read the contributing guidelines
+                before opening an issue.
+              </p>
+            </div>
             <SearchBar searchingFunction={handleChange} />
             <div className="list-of-issues">
+              <IssueHeader />
               {data
                 // eslint-disable-next-line array-callback-return
                 .filter((issue) => {
@@ -58,7 +72,7 @@ const App: FC = () => {
                         key={index}
                         // id={data[0].id}
                         title={issue.title}
-                        // number={data[0].number}
+                        number={issue.number}
                       />
                     </div>
                   );

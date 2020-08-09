@@ -28,41 +28,65 @@ const RepoHeader: FC = () => {
           </a>
         </div>
         <div className="button-list">
-          <a href="https://google.com" className="button">
+          <a href="https://google.com" className="button watch">
             Watch
           </a>
-          <a href="https://yahoo.com" className="button">
+          <a href="https://yahoo.com" className="button star">
             Star
           </a>
-          <a href="https://bing.com" className="button">
+          <a href="https://bing.com" className="button fork">
             Fork
           </a>
         </div>
       </div>
       <div className="tabs-row">
         <div className="tabs">
-          <a href="https://github.com/facebook/react" className="tab">
+          <a
+            href="https://github.com/facebook/react"
+            className="tab code-button"
+          >
             Code
           </a>
-          <a href="https://github.com/facebook/react/issues" className="tab">
+          <a
+            href="https://github.com/facebook/react/issues"
+            className="tab issues-button"
+          >
             Issues
           </a>
-          <a href="https://github.com/facebook/react/pulls" className="tab">
+          <a
+            href="https://github.com/facebook/react/pulls"
+            className="tab pull-button"
+          >
             Pull Requests
           </a>
-          <a href="https://github.com/facebook/react/actions" className="tab">
+          <a
+            href="https://github.com/facebook/react/actions"
+            className="tab actions-button"
+          >
             Actions
           </a>
-          <a href="https://github.com/facebook/react/projects" className="tab">
-            Project
+          <a
+            href="https://github.com/facebook/react/projects"
+            className="tab projects-button"
+          >
+            Projects
           </a>
-          <a href="https://github.com/facebook/react/wiki" className="tab">
+          <a
+            href="https://github.com/facebook/react/wiki"
+            className="tab wiki-button"
+          >
             Wiki
           </a>
-          <a href="https://github.com/facebook/react/security" className="tab">
+          <a
+            href="https://github.com/facebook/react/security"
+            className="tab security-button"
+          >
             Security
           </a>
-          <a href="https://github.com/facebook/react/pulse" className="tab">
+          <a
+            href="https://github.com/facebook/react/pulse"
+            className="tab insights-button"
+          >
             Insights
           </a>
         </div>

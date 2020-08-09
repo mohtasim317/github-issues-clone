@@ -16,6 +16,10 @@ svg {
   width: 16px;
 }
 
+.actions-button {
+  width: 105px;
+}
+
 .app {
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -49,10 +53,42 @@ svg {
   margin: 5px;
 }
 
+.contribute-message {
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  padding: 0px 115px;
+  width: 100%;
+}
+
+.code-button {
+  width: 90px;
+}
+
+.issues-button {
+  width: 140px;
+}
+
+.issue-header {
+  background-color: yellowgreen;
+  margin: 0px 0px 0px 0px;
+}
+
 .issue-row {
   display: flex;
   flex-direction: row;
   background-color: orange;
+}
+
+.issues-button {
+  width: 140px;
+}
+
+.insights-button {
+  width: 110px;
 }
 
 .repo-links {
@@ -77,6 +113,20 @@ svg {
   width: 100%;
 }
 
+.projects-button {
+  width: 110px;
+}
+
+.pull-button {
+  width: 180px;
+}
+
+.rendered-app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .repo-link-svg {
   padding: 0px 10px 0px 0px;
 }
@@ -94,11 +144,11 @@ svg {
 }
 
 .search-and-list-container {
-  width: 100%;
+  width: 84%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 115px;
+  /* padding: 0px 115px; */
 }
 
 .search-bar-row {
@@ -107,14 +157,20 @@ svg {
   width: 100%;
   background-color: red;
   padding: 10px 20px 10px 20px;
+  margin: 10px 0px 10px 0px;
 }
 
 .search-bar {
   width: 40%;
 }
 
+.security-button {
+  width: 110px;
+}
+
 .tab {
   height: 48px;
+  border: 1px solid black;
 }
 
 .tabs {
@@ -127,9 +183,14 @@ svg {
   display: flex;
   flex-direction: row;
   height: 48px;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0px 20px;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  padding: 0px 32px;
+  border-bottom: 1px solid;
+}
+
+.wiki-button {
+  width: 85px;
 }
 
 #root {
