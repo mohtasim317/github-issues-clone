@@ -17,4 +17,4 @@ const Issues: FC<Props> = (props) => {
   );
 };
 
-export default Issues;
+export default Issues ;

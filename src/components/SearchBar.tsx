@@ -11,10 +11,9 @@ const SearchBar: FC<Props> = (props) => {
     <div className="search-bar-row">
       <input
         className="search-bar"
-        placeholder="search"
+        placeholder="is:issue is:open "
         style={{ fontSize: "12px" }}
         onChange={props.searchingFunction}
-        // value={props.value}
         // type={props.type}
       ></input>
     </div>

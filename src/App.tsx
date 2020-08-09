@@ -13,7 +13,7 @@ export interface GithubData {
 const App: FC = () => {
   const [fetchStatus, updateStatus] = useState<Boolean>(false);
   const [data, updateData] = useState<GithubData[]>([]);
-  const [searchValue, updateSearchValue] = useState<any>("");
+  const [searchValue, updateSearchValue] = useState<string>("");
 
   const fetchData = async () => {
     try {
@@ -32,13 +32,9 @@ const App: FC = () => {
     fetchData();
   }, []);
 
-  // const searchFunction = (event: React.FormEvent<HTMLInputElement>): void => {
-  //   console.log(event.target);
-  //   updateSearchValue(event.target);
-  // };
-  function handleChange(event: { target: HTMLInputElement }) {
+  const handleChange = (event: { target: HTMLInputElement }) => {
     updateSearchValue(event.target.value);
-  }
+  };
 
   return (
     <div className="app">

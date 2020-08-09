@@ -17,17 +17,24 @@ svg {
 }
 
 .app {
-  background-color: blue;
-  /* background-color: rgb(255, 255, 255); */
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
+.blue-link {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 21px;
+  font-weight: bold;
+  color: blue;
+}
+
 .button-list {
   display: flex;
-  height: 50px;
+  height: 30px;
   flex-direction: row;
   align-items: center;
   border: 1px black;
@@ -56,19 +63,26 @@ svg {
 .link-and-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
   width: 100%;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 32px;
 }
 
 .list-of-issues {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.repo-link-svg {
+  padding: 0px 10px 0px 0px;
 }
 
 .repo-header {
-  /* background-color: rgb(250, 251, 252); */
-  background-color: yellow;
+  background-color: rgb(250, 251, 252);
   width: 100%;
   height: 112px;
   margin: 0px;
@@ -76,10 +90,15 @@ svg {
   flex-direction: column;
   /* align-content: space-around; */
   justify-content: space-between;
+  margin: 0px 0px 30px 0px;
 }
 
 .search-and-list-container {
-  margin: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 115px;
 }
 
 .search-bar-row {
@@ -94,9 +113,23 @@ svg {
   width: 40%;
 }
 
+.tab {
+  height: 48px;
+}
+
 .tabs {
+  background-color: teal;
   display: flex;
   flex-direction: row;
+}
+
+.tabs-row {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 20px;
 }
 
 #root {
