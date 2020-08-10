@@ -3,12 +3,13 @@ import RepoHeader from "./components/RepoHeader";
 import SearchBar from "./components/SearchBar";
 import Issues from "./components/Issues";
 import IssueHeader from "./components/IssueHeader";
-import ContributeMessage from "./components/ContributeMessage"
+import ContributeMessage from "./components/ContributeMessage";
 import "./index.css";
 
 export interface GithubData {
   title: string;
   number: number;
+  created_at: string;
   user: {
     login: string;
   };
@@ -65,6 +66,7 @@ const App: FC = () => {
                         login={issue.user.login}
                         title={issue.title}
                         number={issue.number}
+                        created_at={issue.created_at}
                       />
                     </div>
                   );

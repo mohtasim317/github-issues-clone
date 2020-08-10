@@ -1,15 +1,20 @@
 import React, { FC } from "react";
 import "../index.css";
+import moment from "moment";
 
 interface Props {
   key: number;
   title: string;
   number: number;
   login: string;
+  created_at: string;
   // id: number;
 }
 
 const Issues: FC<Props> = (props) => {
+  let then = moment(props.created_at);
+  let now = moment();
+  let ans = then.from(now);
   return (
     <div className="issue">
       <div className="svg-and-issue">
@@ -28,7 +33,7 @@ const Issues: FC<Props> = (props) => {
         <h4 className="issue-title">{props.title}</h4>
       </div>
       <p className="issue-creator">
-        #{props.number} opened yesterday by {props.login}
+        #{props.number} opened {ans} by {props.login}
       </p>
     </div>
   );
