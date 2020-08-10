@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component is pretty cool 1`] = `
+exports[`Issues Component renders an issue component with Issue title and details of author 1`] = `
 <div
   className="issue"
 >

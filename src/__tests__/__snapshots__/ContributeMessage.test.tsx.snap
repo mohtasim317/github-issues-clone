@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContributeMessage Component Snapshot renders a Contribute Message with instructions on how to submit to the React repo 1`] = `
+<div
+  className="contribute-message"
+>
+  <div
+    className="contribute-first-line"
+  >
+    <h4
+      className="contribute contribute-one"
+    >
+      <span
+        aria-label="hand waving emoji"
+        className="hand-emoji"
+        role="img"
+      >
+        👋
+      </span>
+      <div
+        className="contribute-first-line-text"
+      >
+        Want to contribute to facebook/react?
+      </div>
+    </h4>
+  </div>
+  <p
+    className="contribute contribute-two"
+  >
+    If you have a bug or an idea, read the
+    <span>
+      <a
+        className="contributing-link"
+        href="/"
+      >
+         
+        contributing guidelines
+         
+      </a>
+    </span>
+    before opening an issue.
+  </p>
+</div>
+`;
