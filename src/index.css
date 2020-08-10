@@ -5,7 +5,13 @@
 }
 
 @media all and (max-width: 768px) {
-  .button {
+  .button.fork {
+    display: none;
+  }
+  .button.watch {
+    display: none;
+  }
+  .button.star {
     display: none;
   }
 }
@@ -43,27 +49,84 @@ body {
   color: rgb(2, 102, 214);
 }
 
+.button-and-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-text {
+  padding: 0px 0px 0px 5px;
+}
+
 .button-list {
   display: flex;
-  height: 30px;
+  height: 32px;
   flex-direction: row;
   align-items: center;
-  border: 1px black;
-  background-color: red;
 }
 
 .button {
-  background-color: green;
-  width: 145px;
   height: 28px;
-  padding: 5px;
   margin: 5px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(225, 228, 232);
+  font-size: 12px;
+}
+
+.button.watch {
+  width: 147px;
+}
+
+.button-and-text-watch {
+  width: 97px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 10px;
+  align-items: center;
+  border-right: 1px solid rgb(225, 228, 232);
+}
+
+.button-and-text-star {
+  width: 70px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 10px;
+  align-items: center;
+  border-right: 1px solid rgb(225, 228, 232);
+}
+
+.button-and-text-fork {
+  width: 70px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 10px;
+  align-items: center;
+  border-right: 1px solid rgb(225, 228, 232);
+}
+
+.button.fork {
+  width: 127px;
+}
+
+.button.star {
+  width: 123px;
 }
 
 .contribute {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .contribute-message {
@@ -73,12 +136,45 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(225, 228, 232);
-  padding: 0px 115px;
+  padding: 0px 100px;
   width: 100%;
+  overflow-wrap: normal;
+  text-align: center;
+}
+
+.contribute-first-line {
+  display: flex;
+  flex-direction: row;
+}
+.contribute-first-line-text {
+  margin: 0px 0px 0px 5px;
 }
 
 .code-button {
   width: 90px;
+}
+
+.count {
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.count-watch {
+  width: 53px;
+}
+
+.count-star {
+  width: 55px;
+}
+
+.count-fork {
+  width: 60px;
 }
 
 .facebook-link {
