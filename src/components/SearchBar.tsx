@@ -19,7 +19,7 @@ const SearchBar: FC<Props> = (props) => {
           onChange={props.searchingFunction}
         ></input>
         <div className="labels-and-milestones">
-          <div className="labels-button">
+          <div className="labels-button gray-hover">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="svg labels-svg"
@@ -34,7 +34,7 @@ const SearchBar: FC<Props> = (props) => {
             </svg>
             Labels <div className="number">58</div>
           </div>
-          <div className="milestones-button">
+          <div className="milestones-button gray-hover">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="svg milestones-svg"

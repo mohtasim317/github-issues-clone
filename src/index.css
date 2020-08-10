@@ -720,3 +720,11 @@ h4 {
     display: none;
   }
 }
+
+.gray-hover:hover {
+  background-color: rgb(246, 248, 250);
+}
+
+.issue-title:hover {
+  color: blue;
+}

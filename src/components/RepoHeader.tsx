@@ -30,7 +30,7 @@ const RepoHeader: FC = () => {
         <div className="button-list">
           <a
             href="https://github.com/facebook/react/watchers"
-            className="button watch"
+            className="button watch gray-hover"
           >
             <div className="button-and-text button-and-text-watch">
               <svg
@@ -49,7 +49,7 @@ const RepoHeader: FC = () => {
             </div>
             <div className="count count-watch">6.7k</div>
           </a>
-          <a href="https://yahoo.com" className="button star">
+          <a href="https://yahoo.com" className="button star gray-hover">
             <div className="button-and-text button-and-text-star">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const RepoHeader: FC = () => {
             </div>
             <div className="count count-star">154k</div>
           </a>
-          <a href="https://bing.com" className="button fork">
+          <a href="https://bing.com" className="button fork gray-hover">
             <div className="button-and-text button-and-text-fork">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
