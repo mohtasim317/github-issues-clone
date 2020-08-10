@@ -3,7 +3,6 @@ import "../index.css";
 
 interface Props {
   searchingFunction: any;
-  // onChange: React.FormEventHandler<HTMLInputElement>): void
 }
 
 const SearchBar: FC<Props> = (props) => {
@@ -11,14 +10,13 @@ const SearchBar: FC<Props> = (props) => {
     <div className="search-bar-row">
       <div className="filter-and-form">
         <div className="button-filter">
-          <p>Filters &darr;</p>
+          <p>Filters&darr;</p>
         </div>
         <input
           className="search-bar"
           placeholder="  is:issue is:open "
           style={{ fontSize: "14px" }}
           onChange={props.searchingFunction}
-          // type={props.type}
         ></input>
         <div className="labels-and-milestones">
           <div className="labels-button">
