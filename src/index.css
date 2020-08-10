@@ -713,4 +713,10 @@ h4 {
   .button-filter {
     font-size: 10px;
   }
+  .labels-svg {
+    display: none;
+  }
+  .milestones-svg {
+    display: none;
+  }
 }

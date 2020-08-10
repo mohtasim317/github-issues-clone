@@ -22,7 +22,7 @@ const SearchBar: FC<Props> = (props) => {
           <div className="labels-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="svg"
+              className="svg labels-svg"
               viewBox="0 0 16 16"
               version="1.1"
               aria-hidden="true"
@@ -37,7 +37,7 @@ const SearchBar: FC<Props> = (props) => {
           <div className="milestones-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="svg"
+              className="svg milestones-svg"
               viewBox="0 0 16 16"
               version="1.1"
               aria-hidden="true"
