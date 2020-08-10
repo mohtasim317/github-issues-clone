@@ -5,10 +5,7 @@ const IssueHeader: FC = (props) => {
   return (
     <div className="issue-header">
       <div className="number-issues-container">
-        <a
-          className="number-issues-open"
-          href="https://github.com/facebook/react/issues?q=is%3Aopen+is%a"
-        >
+        <a className="number-issues-open" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="svg"
@@ -23,10 +20,7 @@ const IssueHeader: FC = (props) => {
           </svg>
           <div className="issues-status-count">460 Open</div>
         </a>
-        <a
-          className="number-issues-closed"
-          href="https://github.com/facebook/react/issues?q=is%3Aissue+is%3Aclosed"
-        >
+        <a className="number-issues-closed" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="svg"

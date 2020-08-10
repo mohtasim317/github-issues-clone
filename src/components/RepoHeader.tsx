@@ -19,11 +19,11 @@ const RepoHeader: FC = () => {
               d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
             ></path>
           </svg>
-          <a href="https://www.google.com" className="blue-link facebook-link">
+          <a href="/" className="blue-link facebook-link">
             facebook
           </a>
           <p className="slash"> / </p>
-          <a href="https://www.google.com" className="blue-link react-link">
+          <a href="/" className="blue-link react-link">
             react
           </a>
         </div>
@@ -49,7 +49,7 @@ const RepoHeader: FC = () => {
             </div>
             <div className="count count-watch">6.7k</div>
           </a>
-          <a href="https://yahoo.com" className="button star gray-hover">
+          <a href="/" className="button star gray-hover">
             <div className="button-and-text button-and-text-star">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const RepoHeader: FC = () => {
             </div>
             <div className="count count-star">154k</div>
           </a>
-          <a href="https://bing.com" className="button fork gray-hover">
+          <a href="/" className="button fork gray-hover">
             <div className="button-and-text button-and-text-fork">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,10 +89,7 @@ const RepoHeader: FC = () => {
       </div>
       <div className="tabs-row">
         <div className="tabs">
-          <a
-            href="https://github.com/facebook/react"
-            className="tab code-button"
-          >
+          <a href="/" className="tab code-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -108,10 +105,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Code</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/issues"
-            className="tab issues-button"
-          >
+          <a href="/" className="tab issues-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -127,10 +121,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Issues 462</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/pulls"
-            className="tab pull-button"
-          >
+          <a href="/" className="tab pull-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -146,10 +137,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Pull Requests 106</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/actions"
-            className="tab actions-button"
-          >
+          <a href="/" className="tab actions-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -165,10 +153,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Actions</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/projects"
-            className="tab projects-button"
-          >
+          <a href="/" className="tab projects-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -184,10 +169,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Projects</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/wiki"
-            className="tab wiki-button"
-          >
+          <a href="/" className="tab wiki-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -203,10 +185,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Wiki</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/security"
-            className="tab security-button"
-          >
+          <a href="/" className="tab security-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"
@@ -222,10 +201,7 @@ const RepoHeader: FC = () => {
             </svg>
             <div className="tab-text">Security</div>
           </a>
-          <a
-            href="https://github.com/facebook/react/pulse"
-            className="tab insights-button"
-          >
+          <a href="/" className="tab insights-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               display="none inline"

@@ -20,10 +20,7 @@ const ContributeMessage: FC = () => {
       <p className="contribute contribute-two">
         If you have a bug or an idea, read the
         <span>
-          <a
-            href="https://github.com/facebook/react/blob/master/CONTRIBUTING.md"
-            className="contributing-link"
-          >
+          <a href="/" className="contributing-link">
             {" "}
             contributing guidelines{" "}
           </a>
