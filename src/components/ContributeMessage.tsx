@@ -4,8 +4,12 @@ const ContributeMessage: FC = () => {
   return (
     <div className="contribute-message">
       <div className="contribute-first-line">
-        <h4 className="contribute">
-          <span role="img" aria-label="hand waving emoji" className="hand-emoji">
+        <h4 className="contribute contribute-one">
+          <span
+            role="img"
+            aria-label="hand waving emoji"
+            className="hand-emoji"
+          >
             👋
           </span>
           <div className="contribute-first-line-text">
@@ -13,9 +17,15 @@ const ContributeMessage: FC = () => {
           </div>
         </h4>
       </div>
-      <p className="contribute">
-        If you have a bug or an idea, read the contributing guidelines before
-        opening an issue.
+      <p className="contribute contribute-two">
+        If you have a bug or an idea, read the
+        <span>
+          <a href="https://wwwgoogle.com" className="contributing-link">
+            {" "}
+            contributing guidelines{" "}
+          </a>
+        </span>
+        before opening an issue.
       </p>
     </div>
   );

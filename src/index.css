@@ -124,9 +124,26 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
+}
+.contribute-one {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: 500;
+  padding: 0px 0px 8px 0px;
+}
+
+.contribute-two {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contributing-link {
+  color: rgb(2, 102, 214);
+}
+
+.contributing-link:hover {
+  text-decoration: underline;
 }
 
 .contribute-message {
