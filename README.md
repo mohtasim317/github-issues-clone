@@ -15,7 +15,7 @@ npm start
 
 The app should open up after npm start is entered.
 
-To handle the testing suite enter:
+To run tests, enter:
 
 ```
 npm run test
