@@ -92,6 +92,23 @@ body {
   border-right: 1px solid rgb(225, 228, 232);
 }
 
+.button-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 0px;
+  padding: 0px;
+  height: 32px;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 0px;
+  background-color: rgb(246, 248, 250);
+  border: 1px solid rgb(217, 219, 219);
+}
+
 .button-and-text-star {
   width: 70px;
   height: 28px;
@@ -157,6 +174,8 @@ body {
   width: 100%;
   overflow-wrap: normal;
   text-align: center;
+  border-radius: 6px;
+  margin: 0px 0px 25px 0px;
 }
 
 .contribute-first-line {
@@ -192,6 +211,12 @@ body {
 
 .count-fork {
   width: 60px;
+}
+
+.filter-and-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .facebook-link {
@@ -254,8 +279,48 @@ body {
   width: 100%;
 }
 
+.new-issue {
+  width: 112px;
+  height: 32px;
+  background-color: rgb(77, 165, 79);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
 .projects-button {
   width: 110px;
+}
+
+.labels-and-milestones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.labels-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 130px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.milestones-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
 }
 
 .pull-button {
@@ -302,16 +367,23 @@ body {
   width: 100%;
   height: 32px;
   align-items: center;
-  background-color: red;
-  padding: 10px 20px 10px 20px;
-  margin: 25px 0px 20px 0px;
+  justify-content: space-evenly;
+  margin: 0px 0px 18px 0px;
 }
 
 .search-bar {
   height: 32px;
-  width: 40%;
+  width: 63%;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid rgb(230, 248, 250);
+  background-color: rgb(250, 251, 252);
 }
 
+.labels-and-milestones {
+  padding: 0px 0px 0px 15px;
+}
 .security-button {
   width: 110px;
 }
@@ -380,4 +452,8 @@ body {
 
 #root {
   width: 100%;
+}
+
+.issue {
+  height: 100px;
 }
